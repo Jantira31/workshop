@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1E3A8A; /* พื้นหลังสีน้ำเงิน */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #1E3A8A; /* พื้นหลังกล่องล็อกอินสีน้ำเงิน */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: right; /* จัดข้อความให้อยู่ขวา */
+            max-width: 400px; /* ขนาดสูงสุดของกล่องล็อกอิน */
+            width: 100%;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+            color: white; /* เปลี่ยนสีข้อความเป็นสีขาว */
+        }
+        .login-container p {
+            color: white; /* เปลี่ยนสีข้อความเป็นสีขาว */
+        }
+        .login-container input[type="text"], 
+        .login-container input[type="password"],
+        .login-container button,
+        .login-container .google-login {
+            width: 100%; /* ปรับความกว้างให้เท่ากัน */
+            padding: 10px; /* ปรับขนาด padding ให้เท่ากัน */
+            margin: 10px 0; /* ระยะห่างระหว่างแต่ละ input และปุ่ม */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* ช่วยให้ padding ไม่เกินขนาดที่กำหนด */
+        }
+        .login-container button {
+            background-color: white; /* พื้นหลังปุ่ม Login สีขาว */
+            color: #1E3A8A; /* สีข้อความปุ่ม Login เป็นสีน้ำเงิน */
+            border: none;
+            cursor: pointer;
+            font-size: 16px; /* ขนาดตัวอักษรปุ่ม */
+        }
+        .login-container button:hover {
+            background-color: #ccc; /* พื้นหลังปุ่ม Login เปลี่ยนเป็นสีเทาเมื่อ hover */
+        }
+        .login-container .google-login {
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px; /* ขนาดตัวอักษรปุ่ม */
+        }
+        .login-container .google-login:hover {
+            background-color: #333; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+        }
+        .login-container a {
+            color: #FFD700; /* เปลี่ยนสีลิงก์เป็นสีทอง */
+            text-decoration: none;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        .forgot-password {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .forgot-password a {
+            color: #FFD700; /* เปลี่ยนสีลิงก์เป็นสีทอง */
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <p>Please enter your Login and your Password</p>
+        <input type="text" placeholder="Username or Email" required>
+        <input type="password" placeholder="Password" required>
+
+        <div class="forgot-password">
+            <a href="">Forgot password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+        <button class="google-login">Or, sign-in with Google</button>
+        <p>Not a member yet? <a href="#">Register</a></p>
+    </div>
+</body>
+</html>
