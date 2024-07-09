@@ -2,14 +2,13 @@
     display: flex;
     gap: 24px;
     background: beige;
-
 }
 
 .left,.right {
     width: 50%;
 }
 
-.left img 
+.left  img 
 .right{
     display: flex;
     align-items: center;
@@ -47,7 +46,7 @@
 
 .img {
     position: relative;
-    width: 100;
+    width: 100;  
 }
 
 .img .img{
